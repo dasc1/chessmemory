@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h2>PRODUCTS</h2>
+<p>Buy one of our awesome products!</p>
+<ul>
+  {% for post in site.categories.products %}
+  <li>
+    <a href="">{{post.title}}</a>
+    <p>{{post.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>

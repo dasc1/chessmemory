@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h2>DEV</h2>
+<p>See what we have been up to lately...</p>
+<ul>
+  {% for post in site.categories.dev %}
+  <li>
+    <a href="">{{post.title}}</a>
+    <p>{{post.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>
